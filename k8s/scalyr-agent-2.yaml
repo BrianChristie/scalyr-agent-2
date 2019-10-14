@@ -43,19 +43,19 @@ spec:
             valueFrom:
               configMapKeyRef:
                  name: scalyr-config
-                 key: k8s_cluster
+                 key: SCALYR_K8S_CLUSTER_NAME
                  optional: true
           - name: SCALYR_SERVER
             valueFrom:
               configMapKeyRef:
                  name: scalyr-config
-                 key: scalyr_server
+                 key: SCALYR_SERVER
                  optional: true
           - name: SCALYR_K8S_EVENTS_DISABLE
             valueFrom:
               configMapKeyRef:
                  name: scalyr-config
-                 key: k8s_events_disable
+                 key: SCALYR_K8S_EVENTS_DISABLE
                  optional: true
         resources:
           limits:
